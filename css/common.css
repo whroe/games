@@ -1,0 +1,118 @@
+/*版心 */
+.warpper{
+    width:1200px;
+    margin: 0 auto;
+    user-select: none;
+}
+.clearfix{
+    content: '';
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* subnav子菜单 */
+.topnav{
+    width: 78px;
+    height: 312px;
+    z-index: 1000;
+    color: red;
+}
+/* ==================头部公共样式===================== */
+header{
+    font-size: 14px;
+    line-height: 28px;
+    color: #bfbfbf;
+    background: #323232;
+}
+main{
+    cursor: pointer;
+}
+.we{
+    font-size: 18px;
+}
+header a{
+    color: #d55603;
+}
+
+#head{
+    position: relative;
+    height: 85px;
+}
+.search{
+    height: 36px;
+}
+.search form{
+    position: relative;
+}
+.s_l{
+    width: 440px;
+    height: 36px;
+    background-color: #ffffff;
+    border: solid 2px #ff6600;
+    placeholder-color:red;
+}
+.s_btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+	width: 50px;
+	height: 38px;
+    background:url(../商城项目前端素材/img/bgicon.png) no-repeat 0 2px;
+}
+#ipt{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 680px;
+    height: 40px;
+}
+.shop{
+        display: inline-block;
+        width: 100px;
+        height: 36px;
+        background-color: #ff6600;
+        text-align: center;
+        line-height: 36px;
+        color: #ffffff;
+}
+.shop:hover .icon-gouwuchekong{
+    color: #999;
+}
+.my{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 36px;
+    color: #999;
+}
+
+/* 导航栏 */
+#topnav{
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    height: 25px;
+    border-bottom: 1px solid #ff6600;
+}
+#topnav li:first-child{
+    margin-left: 236px;
+}
+#topnav li{
+    float: left;
+    width: 65px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 14px;
+}
+#topnav li a{
+    font-size: 16px;
+    color: #323232;
+}

@@ -1,0 +1,77 @@
+ul,
+ol,
+li,
+div {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.ft-carousel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.ft-carousel .carousel-inner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.ft-carousel .carousel-inner .carousel-item {
+	float: left;
+	height: 100%;
+}
+
+.ft-carousel .carousel-item img {
+	width: 100%;
+	height: 345px;
+}
+
+.ft-carousel .carousel-indicators {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+}
+
+.ft-carousel .carousel-indicators span {
+	display: inline-block;
+    width: 14px;
+    height: 3px;
+    background-color: #fff;
+    margin: -2px 3px;
+    cursor: pointer;
+}
+
+.ft-carousel .carousel-indicators span.activ {
+	background-color: red;
+}
+
+.ft-carousel .carousel-btn {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 45px;
+	margin-top: -25px;
+	cursor: pointer;
+}
+
+.ft-carousel .carousel-prev-btn {
+	left: 0;
+	background: url(../商城项目前端素材/img/nav.png) no-repeat 0 0;
+}
+
+.ft-carousel .carousel-next-btn {
+	right: 0;
+	background: url(../商城项目前端素材/img/nav.png) no-repeat -45px 0;
+}

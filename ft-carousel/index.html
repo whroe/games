@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/ft-carousel.css" />
+		<style>
+			body {
+	margin: 0;
+	font-family: "微软雅黑";
+	background-color: #1F1F1F;
+			}
+			
+			.example {
+	width: 624px;
+	height: 336px;
+	font-size: 40px;
+	text-align: center;
+	margin: 20px auto;
+	background-color: #464576;
+			}
+			
+			.carousel-item{line-height: 336px;color: #fff;font-family:  Arial Black}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="example">
+			<div class="ft-carousel" id="carousel_1">
+				<ul class="carousel-inner">
+					<li class="carousel-item"><img src="./img/a1.png" /></li>
+					<li class="carousel-item"><img src="./img/a2.png" /></li>
+					<li class="carousel-item"><img src="./img/a3.png" /></li>
+					<li class="carousel-item"><img src="./img/a4.png" /></li>
+					<li class="carousel-item"><img src="./img/a5.png" /></li>
+					<li class="carousel-item"><img src="./img/a6.png" /></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="example">
+			<div class="ft-carousel" id="carousel_2">
+				<ul class="carousel-inner">
+					<li class="carousel-item">1</li>
+					<li class="carousel-item">2</li>
+					<li class="carousel-item">3</li>
+					<li class="carousel-item">4</li>
+					<li class="carousel-item">5</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="example">
+			<div class="ft-carousel" id="carousel_3">
+				<ul class="carousel-inner">
+					<li class="carousel-item">1</li>
+					<li class="carousel-item">2</li>
+					<li class="carousel-item">3</li>
+					<li class="carousel-item">4</li>
+					<li class="carousel-item">5</li>
+					<li class="carousel-item">6</li>
+					<li class="carousel-item">7</li>
+				</ul>
+			</div>
+		</div>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="js/ft-carousel.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#carousel_1").FtCarousel();
+
+			$("#carousel_2").FtCarousel({
+				index: 1,
+				auto: false
+			});
+
+			$("#carousel_3").FtCarousel({
+				index: 0,
+				auto: true,
+				time: 3000,
+				indicators: false,
+				buttons: true
+			});
+		</script>
+	</body>
+
+</html>
