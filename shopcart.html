@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐购·结算中心</title>
+    <meta name="description" content="乐购LEGOU-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。"
+    />
+    <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,乐购" />
+    <link rel="shortcut icon" href="./商城项目前端素材/img/logo.bmp" type="image/x-icon">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/shopcart.css">
+    <link rel="stylesheet" href="./css/font_1172888_aoiqa2qv305/iconfont.css">
+</head>
+
+<body>
+        <div class="mask">
+                <div class="content">
+                    <div class="top">
+                        <span><img src="./商城项目前端素材/img/07-下订单-B_03.jpg" alt=""></span><span>你未登录请登录支付</span><span class="close">✘</span>
+                    </div>
+                    <div class="bottom">
+                        <button class="qx">登录支付宝支付</button><button class="required">微信支付</button>
+                    </div>
+                </div>
+            </div>
+    <!-- 1. 顶部 -->
+      <!-- 头部 -->
+      <header>
+            <div class="warpper clearfix">
+                <span class="fl img">
+                    <img src="./商城项目前端素材/img/logo.jpg">
+                </span>
+                <span class="we">legochina.cn</span>
+                <span class="fr">欢迎光临乐购
+                    <a href="#">乐购</a>，请
+                    <a href="登录验证加选项卡.html#">登录</a>\
+                    <a href="登录验证加选项卡.html#">注册</a>
+                </span>
+            </div>
+        </header>
+           <!-- 导航栏菜单 -->
+    <div class="warpper" id="head">
+            <div class="clearfix" id="ipt">
+                <div class="search fl">
+                    <form>
+                        <label for="">
+                            <input type="text" name="" class="s_l" placeh#btnder="创意文具" required>
+                            <span class="s_btn"></span>
+                        </label>
+                    </form>
+                </div>
+                <div class="fr">
+                    <span class="shop">
+                        <i class="iconfont icon-gouwuchekong"></i>购物车 &nbsp;3</span>
+                    <span class="my">我的订单</span>
+                </div>
+                <div class="clearfix select">
+                        <select class="fr">
+                            <option value="北京">北京</option>
+                            <option value="成都">成都</option>
+                            <option value="武汉">武汉</option>
+                            <option value="南京">南京</option>
+                        </select>
+                        <span class="fr">配送至:&emsp;</span>
+                    </div>
+            </div>
+        </div>
+    <div class="shopcart warpper">
+        <!-- 全部商品 -->
+        <h3>填写并核对订单信息</h3>
+        <!-- 表格 -->
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox">全选</th>
+                    <th>商品</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="checked1"><input type="checkbox"></td>
+                    <td>
+                        <img src="./商城项目前端素材/商城素材/素材图片/书籍/23353342-1_l.jpg" alt="">
+                        &emsp;从你的全世界路过
+                    </td>
+                    <td class="price">41.00</td>
+                    <td>
+                        <button class="add">+</button>
+                        <input type="text" value="1">
+                        <button class="reduce">-</button>
+                    </td>
+                    <td class="subprice">41.00</td>
+                    <td><span class="del">删除</span><br>移动到我的关注</td>
+                </tr>
+                <tr>
+                    <td class="checked1"><input type="checkbox"></td>
+                    <td>
+                        <img src="./商城项目前端素材/商城素材/素材图片/书籍/23353342-1_l.jpg" alt="">
+                        &emsp;从你的全世界路过
+                    </td>
+                    <td class="price">11.00</td>
+                    <td>
+                        <button class="add">+</button>
+                        <input type="text" value="1">
+                        <button class="reduce">-</button>
+                    </td>
+                    <td class="subprice">11.00</td>
+                    <td><span class="del">删除</span><br>移动到我的关注</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="totalPrice">
+            <input type="checkbox">全选   
+            <span class="deleteChecked">删除选中商品</span> 
+            <span>已选择 <b class="count">0</b>  件商品</span> 
+            <span>总价: <b class="total">41.00</b></span> 
+            <button id="calc">去结算</button>
+        </div>
+    </div>
+    <div class="sling">
+            <h2 class="warpper">
+                <span>猜你喜欢</span>
+            </h2>
+            <ul class="warpper">
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="./商城项目前端素材/商城素材/素材图片/书籍/22935553-1_l.jpg" alt="">
+                        </div>
+                        <p class="eight-z">白夜行&emsp;东野上吾</p>
+                        <p class="tj">推荐：
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-ai65"></i>
+                        </p>
+                        <p class="xt-class">
+                            ￥:38
+                            <del>￥:58</del>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="./商城项目前端素材/商城素材/素材图片/书籍/22935553-1_l.jpg" alt="">
+                        </div>
+                        <p class="eight-z">白夜行&emsp;东野上吾</p>
+                        <p class="tj">推荐：
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-ai65"></i>
+                        </p>
+                        <p class="xt-class">
+                            ￥:38
+                            <del>￥:58</del>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="./商城项目前端素材/商城素材/素材图片/书籍/22935553-1_l.jpg" alt="">
+                        </div>
+                        <p class="eight-z">白夜行&emsp;东野上吾</p>
+                        <p class="tj">推荐：
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-ai65"></i>
+                        </p>
+                        <p class="xt-class">
+                            ￥:38
+                            <del>￥:58</del>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="./商城项目前端素材/商城素材/素材图片/书籍/22935553-1_l.jpg" alt="">
+                        </div>
+                        <p class="eight-z">白夜行&emsp;东野上吾</p>
+                        <p class="tj">推荐：
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-ai65"></i>
+                        </p>
+                        <p class="xt-class">
+                            ￥:38
+                            <del>￥:58</del>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="./商城项目前端素材/商城素材/素材图片/书籍/22935553-1_l.jpg" alt="">
+                        </div>
+                        <p class="eight-z">白夜行&emsp;东野上吾</p>
+                        <p class="tj">推荐：
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-pentagram"></i>
+                            <i class="iconfont icon-ai65"></i>
+                        </p>
+                        <p class="xt-class">
+                            ￥:38
+                            <del>￥:58</del>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="port warpper"></div>
+    <footer>
+            <div class="f-top">
+                <ul class="warpper clearfix">
+                    <li>
+                        <img src="./商城项目前端素材/img/222_11.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./商城项目前端素材/img/222_13.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./商城项目前端素材/img/222_15.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./商城项目前端素材/img/222_17.png" alt="">
+                    </li>
+                </ul>
+                <div id="shangxia2" class="backTop">
+                    <span id="gotop1">
+                        <img src="./商城项目前端素材/img/gototop_05.jpg" alt="返回顶部小火箭">
+    
+                    </span>
+                </div>
+            </div>
+            <div class="f-bt">
+                <ul>
+                    <li>
+                        <a href="">购物指南</a>
+                    </li>
+                    <li>
+                        <a href="">支付方式</a>
+                    </li>
+                    <li>
+                        <a href="">订单服务</a>
+                    </li>
+                    <li>
+                        <a href=""> 退换货</a>
+                    </li>
+                    <li>
+                        <a href=""> 商家服务</a>
+                    </li>
+                    <li>
+                        <a href="">购物流程</a>
+                    </li>
+                    <li>
+                        <a href=""> 货到付款</a>
+                    </li>
+                    <li>
+                        <a href=""> 订单配送查询</a>
+                    </li>
+                    <li>
+                        <a href=""> 退换货政策</a>
+                    </li>
+                    <li>
+                        <a href=""> 商家中心</a>
+                    </li>
+                    <li>
+                        发票制度 </li>
+                    <li>
+                        <a href="">网上支付</a>
+                    </li>
+                    <li>
+                        <a href=""> 订单状态说明</a>
+                    </li>
+                    <li>
+                        <a href=""> 自助申请退换货</a>
+                    </li>
+                    <li>
+                        <a href="">运营服务</a>
+                    </li>
+                    <li>
+                        <a href="">账户管理</a>
+                    </li>
+                    <li>
+                        <a href="">礼品卡支付</a>
+                    </li>
+                    <li>
+                        <a href="">自助取消订单</a>
+                    </li>
+                    <li>
+                        <a href=""> 退换货进度查询</a>
+                    </li>
+                    <li>
+                        <a href=""> 加入尾品汇</a>
+                    </li>
+                    <li>
+                        <a href="">会员优惠</a>
+                    </li>
+                    <li>
+                        <a href=""> 银行转帐</a>
+                    </li>
+                    <li>
+                        <a href=""> 自助修改订单</a>
+                    </li>
+                    <li>
+                        <a href="">退款方式和时间</a>
+                    </li>
+                    <li>
+                        <img src="./商城项目前端素材/img/logo_00.png" alt="">
+                    </li>
+                </ul>
+                <ol class="warpper">
+                    <li>
+                        <a href="#">公司简介</a>
+                    </li>
+                    <li>
+                        <a href="#">Investor &nbsp; Relations</a>
+                    </li>
+                    <li>
+                        <a href="#">网站联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">乐购招商</a>
+                    </li>
+                    <li>
+                        <a href="#">机构销售</a>
+                    </li>
+                    <li>
+                        <a href="#">手机乐购</a>
+                    </li>
+                    <li>
+                        <a href="#">官方Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">热词搜索</a>
+                    </li>
+                </ol>
+                <div class="warpper">
+                    <p>Copyright&nbsp; (C) &nbsp; 乐购网 &nbsp; 2004-2016,&nbsp; All &nbsp; Rights &nbsp; Reserved</p>
+                </div>
+            </div>
+    </footer>
+
+    <!-- 引入jquery.min.js -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/shopcart.js"></script>
+    <script src="./js/topSearch.js"></script>
+<script>
+    $(function(){
+           createTopSearch({
+            imgUrl:'./商城项目前端素材/img/bgicon.png',
+            searchText:'请输入搜索内容....'
+           }); 
+    })
+    //遮罩层
+    $('#calc').click(function(e){
+        e.preventDefault();
+          $('.mask').css({'display':'block','opacity':'1'});
+        })
+        // 关闭遮罩层
+        $('.close').click(function(){
+            $('.mask').css({'display':'none','opacity':'0'});
+        })
+        // 删除
+        $('.qx').click(function(){
+            location.href='https://auth.alipay.com/login/ant_sso_index.htm?goto=https%3A%2F%2Fopenhome.alipay.com%2Fplatform%2FappManage.htm#/create/1-ab6b-4f9c4e5c01f11487667522647';
+        })
+        $('.required').click(function(){
+            location.href ='https://wx.qq.com/';
+        })
+</script>
+</body>
+
+</html>

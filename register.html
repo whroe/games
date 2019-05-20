@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>注册</title>
+</head>
+
+<body>
+        <div class="mask">
+            <div class="content">
+                <div class="top">
+                    <span>登录成功</span>
+                </div>
+                <div class="bottom">
+                    <button class="qx">取消</button><button class="required">确认</button>
+                </div>
+            </div>
+        </div>
+    <!-- 头部 -->
+    <header>
+        <div class="warpper clearfix">
+            <span class="fl">
+                <img src="./商城项目前端素材/img/05-登录_02.jpg">
+            </span>
+            <span class="we">legochina.cn</span>
+            <span class="fr">欢迎光临乐购
+                <a href="#">乐购</a>，请
+                <a href="登录验证加选项卡.html#">登录</a>\
+                <a href="登录验证加选项卡.html#">注册</a>
+            </span>
+        </div>
+    </header>
+    <h2 class="warpper h2">欢迎登录</h2>
+    <span class="login warpper">已有账号，请
+        <a href="#">登录</a>
+    </span>
+    <main class="warpper">
+        <div class="form">
+            <form action="#" id="loginForm">
+                <p class="clearfix">
+                    <span>用户名</span>
+                    <label for="">
+                        <input type="text" name="username" id="" placeholder="您的账户名和登录名">
+                    </label>
+                </p>
+                <p>
+                    <label for="">
+                        <span>设置密码</span>
+                        <input type="password" name="password" id="password" placeholder="建议设置两种字符密码" required="required">
+                    </label>
+                </p>
+                <p>
+                    <label for="">
+                        <span>确认密码</span>
+                        <input type="password" name="confirmpwd" id="confirm" placeholder="再次输入密码">
+                    </label>
+                </p>
+                <p>
+                    <label for="">
+                        <span>中国+18</span>
+                        <input type="tel" name="tel" id="" placeholder="建议使用常用手机号" required="required">
+                    </label>
+                </p>
+                <p>
+                    <label for="">
+                        <span>验证码</span>
+                        <input type="text" name="requircode" id="requircode" placeholder="请输入验证码" required="required">
+                    </label>
+                    <span class="yz code" name='code' id="code">4e7r</span>
+                    <span class="yz error-code"></span>
+                </p>
+                <p>
+                    <label for="">
+                        <span>手机验证码</span>
+                        <input type="number" name="number" id="" placeholder="输入手机验证码" required="required">
+                    </label>
+                    <span class="yz tel" id="tel">获取验证码</span>
+                </p>
+                <p class="check">
+                    <label for="">
+                        <input type="checkbox" name="" id="">
+                    </label>&nbsp;我已阅读并同意
+                    <span class="color">《京东用户注册协议》</span>
+                </p>
+                <p class="smit">
+                    <label for="">
+                        <input type="submit" value="立即注册" id="submit">
+                    </label>
+                </p>
+            </form>
+        </div>
+    </main>
+    <footer class="warpper">
+        <ul>
+            <li>关于我们</li>
+            <li>联系我们</li>
+            <li>人才招聘</li>
+            <li>商家入驻</li>
+            <li>广告服务</li>
+            <li>手机京东</li>
+            <li>友情链接</li>
+            <li>销售联盟</li>
+            <li>京东社区</li>
+            <li>京东公益</li>
+            <li>English slte</li>
+        </ul>
+        <p>Copyright&bscr; 2004 2019 京东JD.com版权所有</p>
+    </footer>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_zh.js"></script>
+    <script src="./js/verify.min.js"></script>
+    <script>
+        //表单验证页面加载完成
+        $(function () {
+            // 自由配置用法
+            $('#loginForm').validate({
+                // 验证的规则
+                rules: {
+                    // 用户名
+                    username: {
+                        required: true, // 必填(非空)
+                        email: true,
+                    },
+                    // 密码
+                    password: {
+                        isPassword: true
+                    },
+                    confirmpwd: {
+                        required: true,
+                        equalTo: '#password'
+                    },
+                    phone_number: {
+                        required: true,
+                        phone_number: true,
+                        digits: true,
+                    },
+                    requircode:{
+                        required:true,
+                    },
+                    number: {
+                        required:true,
+                        rangelength:[3-6],
+                    }
+                },
+                // // 提示信息
+                messages: {
+                    // 用户名
+                    username: {
+                        required: "请使用QQ邮箱或邮箱登录!",
+                        rangelength: "长度需要在 3 ~ 6 位之间"
+                    },
+                    password: {
+                        required: '小可爱，密码不能为空额！！',
+                        rangelength: "输入5-10个字符"
+                    },
+                    confirmpwd: {
+                        required: '小可爱，确认密码也不能为空额！！',
+                        rangelength: "输入5-10个字符",
+                        equalTo: '两次密码不一致！'
+                    },
+                    tel: {
+                        required: "请输入手机号码",
+                        digits: "请输入正确的手机号码",
+                    },
+                    requircode: {
+                        required: '请输入正确验证码',
+                    },
+                    number: {
+                        required: '请输入正确的手机验证码',
+                    }
+                }
+            })
+            // 验证码
+            // 获取输入value
+            var arr=['3r5d','3dy5','67w0','2222','6768','adgtr','fgsg'];
+            function GetRandom(min, max) {
+             return (min + Math.round(Math.random() * (max - min)))
+         }
+            $('#code').click(function(){
+                var num =GetRandom(0,6);
+                $(this).html(arr[num])
+            })
+            $('#requircode').on('blur',function(){
+                var requircode = $(this).val();
+                c(requircode)
+                var code = $(".code").text();
+                c(code)
+                if(requircode!=code){
+                    $('.error-code').css('display','block');
+                    $('.error-code').text('输入的验证码不正确')
+                }else{
+                    $('.error-code').css('display','none');
+                    a('ok')
+                }
+            
+            })
+        
+            // 手机
+            jQuery.validator.addMethod("tel", function (value, element) {
+                var length = value.length;
+                var phone_number = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/
+                return this.optional(element) || (length == 11 && phone_number.test(value));
+            }, "手机号码格式错误!");
+            // 用户名
+            $.validator.addMethod("username", function (value, element) {
+                var eml = /^\w+[-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                var QQ = /^[1-9]\d{4,8}$/;
+                return this.optional(element) || (eml.test(value));
+            }, "请输入正确的邮箱格式！");
+
+            // 密码自定义验证
+            $.validator.addMethod("isPassword", function (value, element) {
+                var pwd = /^[a-zA-Z]{1}([a-zA-Z0-9]|[._]){4,9}$/;
+                return this.optional(element) || (pwd.test(value));
+            }, "亲输入5-10个以字母开头字符!");
+        })
+        // 点击checked
+        $('#submit').click(function(){
+            var state = $('input:[type="checked"]').prop('checked');
+            if(!state){
+                a('必须勾选协议')
+            };
+        })
+        $('#submit').click(function(){
+            $('.mask').css({'display':'block','opacity':'1'});
+        })
+        // ddd
+        $('.qx,.required').click(function(){
+            $('.mask').css({'display':'none','opacity':'0'});
+        })
+        // 手机获取验证码
+        var num =6;
+        $('span#tel').click(function(){
+                var timter =setInterval(function(){
+                    num--;
+                    $('span#tel').html(num+'s');
+                    if(num<0){
+                        clearInterval(timter);
+                        $('span#tel').html('获取成功');
+                    }
+                },1000)
+        })
+       
+		    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <title>乐购·登录页</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="mask">
+            <div class="content">
+                <div class="top">
+                    <span>登录成功</span>
+                </div>
+                <div class="bottom">
+                    <button class="qx">取消</button><button class="required">确认</button>
+                </div>
+            </div>
+        </div>
+    <header>
+        <div class="warpper clearfix">
+            <span class="fl">
+                <img src="./商城项目前端素材/img/05-登录_02.jpg">
+            </span>
+            <span class="we">legochina.cn</span>
+            <span class="fr">欢迎光临乐购
+                <a href="#">乐购</a>，请
+                <a href="登录验证加选项卡.html#">登录</a>\
+                <a href="登录验证加选项卡.html#">注册</a>
+            </span>
+        </div>
+    </header>
+    <h2 class="warpper h2">欢迎登录</h2>
+    <!-- main -->
+    <main class="main">
+        <div class="bg warpper">
+            <div id="Login">
+                <div class="form" id="form">
+                    <form action="#" method="get" class="loginForm">
+                        <div class="loge" id="loge">
+                            <a href="#" class="left">扫码登录</a>
+                            <a href="#" class="right">账号登录</a>
+                        </div>
+                        <div class='Inp-t' id="Inp-t">
+                            <label>
+                                <img src="./商城项目前端素材/img/people.png">
+                                <input type="text" name="username" placeholder="邮箱/用户名/已验证手机" class="Usm" required='true'>
+                                <i class="iconfont icon-shanchu"></i>
+                            </label>
+                        </div>
+                        <div class="Inp-b" id="Inp-b">
+                            <label>
+                                <img src="./商城项目前端素材/img/lock.png">
+                                <input type="password" name="password" placeholder="密码" class="Pwd" required='true'>
+                                <i class="iconfont icon-shanchu"></i>
+                            </label>
+                        </div>
+                        <div class="Fpwd">
+                            <a href="#">忘记密码</a>
+                        </div>
+                        <div class="dl loginForm">
+                            <label>
+                                <input type="submit" name="" value="登录" class="sub">
+                            </label>
+                        </div>
+                        <div class="qq">
+                            <span class="qq-itmes">
+                                <img src="./商城项目前端素材/img/QQ.png">QQ</span>
+                            <span class="wx">
+                                <IMG src="./商城项目前端素材/img/weixin.png">微信</span>
+                            <span class="zhuce">
+                                <img src="">立即注册</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- click -->
+                <div class="form1" id="form1">
+                    <form action="" method="">
+                        <div class="loge" id="loge1">
+                            <a href="#" class="left">扫码登录</a>
+                            <a href="#" class="right">账号登录</a>
+                        </div>
+                        <div class="code" style="
+                        margin: 0 auto;overflow: hidden;">
+                        <span> <img src="./商城项目前端素材/img/05-登录_09.jpg" alt=""></span>
+                           <span class='phone'><img src="./商城项目前端素材/img/05-登录_06.jpg" alt=""></span>
+                            
+                        </div>
+                        <div class="qq">
+                            <span class="qq-itmes">
+                                <img src="./商城项目前端素材/img/QQ.png">QQ</span>
+                            <span>
+                                <IMG src="./商城项目前端素材/img/weixin.png">微信</span>
+                            <span class="zhuce">
+                                <img src="">立即注册</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <!-- 页尾 -->
+    <footer class="warpper">
+        <ul>
+            <li>关于我们</li>
+            <li>联系我们</li>
+            <li>人才招聘</li>
+            <li>商家入驻</li>
+            <li>广告服务</li>
+            <li>手机京东</li>
+            <li>友情链接</li>
+            <li>销售联盟</li>
+            <li>京东社区</li>
+            <li>京东公益</li>
+            <li>English slte</li>
+        </ul>
+        <p>Copyright&bscr; 2004 2019 京东JD.com版权所有</p>
+    </footer>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_zh.js"></script>
+    <script>
+        $(function(){
+        var Input = document.querySelector('#Inp-t input');
+        var Icon = document.querySelector('#Inp-t i');
+        var Input_b = document.querySelector('#Inp-b input');
+        var Icon_b = document.querySelector('#Inp-b i');
+        Input.addEventListener('input', function () {
+            var value = Input.value;
+            Icon.style.opacity = 1;
+            if (value == 0) {
+                Icon.style.opacity = 0;
+            }
+        })
+        //click
+        Icon.addEventListener('click', function () {
+            Input.value = '';
+            Icon.style.opacity = 0;
+        })
+        Input_b.addEventListener('input', function () {
+            var value = Input_b.value;
+            Icon_b.style.opacity = 1;
+            if (value == 0) {
+                Icon_b.style.opacity = 0;
+            }
+        })
+        Icon_b.addEventListener('click', function () {
+            Input_b.value = '';
+            Icon_b.style.opacity = 0;
+        })
+        //tab切换
+        $('.code').hover(function(){
+            $('.code span').css({'float':'left'});
+            $('.code>.phone').fadeToggle();
+        },function(){
+            $('.code span').css({'float':'none'});
+            $('.code>.phone').hide();
+        })
+       //登录页切换
+       $('.left').on('click',function(){
+            $('.form').animate({'right':'345px','opacity':'0'},500);
+           $('.form1').animate({'right':'0px','opacity':'1'},500);
+           $(".right").css('color','#000');
+           $('.form1 .left').css({'color':'#ff6600','font-weight':'bold'})
+       })
+       $('.right').on('click',function(){
+           $('.form1').animate({'right':'-345px','opacity':'0'},500);
+           $('.form').animate({'right':'0px','opacity':'1'},500);
+           $('.left').css('color','#000');
+           $('.form .right').css({'color':'#ff6600','font-weight':'bold'})
+       })
+    })
+       //表单验证页面加载完成
+        $(function () {
+            // 自由配置用法
+            $('.loginForm').validate({
+                // 验证的规则
+                rules: {
+                    // 用户名
+                    username: {
+                        required: true, // 必填(非空)
+                        rangelength:[3, 6] // 长度
+                    },
+                    // 密码
+                    password: {
+                        isPassword: true
+                    }
+                },
+                // // 提示信息
+                messages: {
+                    // 用户名
+                    username: {
+                        required: "用户名不能为空哦!",
+                        rangelength: "长度需要在 3 ~ 6 位之间"
+                    },
+                    password:{
+                        required:'小可爱，密码不能为空额！！',
+                        rangelength:"输入5-10个字符"
+                    }
+                }
+            })
+
+
+            // 添加自定义验证 
+            //用户名验证
+            jQuery.validator.addMethod("username", function(value, element) {   
+                var pwd = /^\w+[-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                return this.optional(element) || (pwd.test(value));
+            }, "请输入正确的邮箱格式！");
+        })
+        // 密码自定义验证
+           jQuery.validator.addMethod("isPassword", function(value, element) {   
+                var pwd = /^[a-zA-Z]{1}([a-zA-Z0-9]|[._]){4,9}$/;
+                return this.optional(element) || (pwd.test(value));
+            }, "亲输入5-10个以字母开头字符!");
+ 
+        //跳转
+        $(function(){
+        $('.qq-itmes').click(function(){
+            location.href ='https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&redirect_uri=http%3A%2F%2Fspcdp.cdposs.qq.com%2Fauth%2Fcallback&client_id=101477813&state=http%3A%2F%2Fspcdp.cdposs.qq.com%2F';
+        })
+        $('.wx').click(function(){
+            location.href ='https://wx.qq.com/';
+        })
+    })
+    // 取消mask
+    $(function(){
+        $('.sub').click(function(){
+            var dis = $('#password-error').css('display');
+            c(dis)
+            if(dis='none'){ 
+                $('.mask').css({'display':'block','opacity':'1'});
+            }
+           
+        })
+        $('.qx,.required').click(function(){
+            $('.mask').css({'display':'none','opacity':'0'});
+        })
+    })
+    </script>
+</body>
+
+</html>

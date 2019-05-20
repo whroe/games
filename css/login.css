@@ -1,0 +1,186 @@
+.warpper{
+    width: 990px;
+    margin: 0 auto;
+}
+.main{
+    position: relative;
+    height: 476px;
+    background: #e53753;
+}
+.bg{
+    height: 476px;
+    margin-top: 10px;
+    background: url(../商城项目前端素材/img/bg-ad.png);
+    z-index: 2;
+}
+footer{
+    padding: 10px;
+    border:none;
+}
+footer>ul li{
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #999;
+}
+.h2{
+    font-family: SimHei;
+	font-size: 30px;
+    color: #666666;
+    margin-top: 18px;
+    width: 435px;
+}
+ul{
+    height: 16px;
+}
+p{
+    text-align: center;
+    padding-top: 6px;
+}
+/* 表单 */
+#Login{
+    width: 348px;
+    height: 333px;
+    position: absolute;
+    top: 10px;
+    right: 224px;
+    overflow: hidden;
+}
+.form1{
+    position: relative;
+    background: white;
+    width: 348px;
+    height: 333px;
+    position: absolute;
+    top: 0;
+    right: -345px;
+    opacity: 0;
+}
+.form1>form>div:nth-child(2)>span{
+    display:block;
+    /* float: left; */
+    width: 147px;
+    height: 147px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.form1>form>div:nth-child(2)>span.phone{
+    display: none;
+    /* display: inline-block; */
+    float: left;
+}
+.form>form>div.qq>span:first-child{
+    padding-left: 20px;
+}
+.form>form>div.qq{
+    margin-top: 20px;
+}
+.form>form>div.qq>span:last-child{
+    padding-left: 160px;
+}
+.form{
+    background: white;
+    width: 348px;
+    height: 333px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.left{
+    position: absolute;
+    top:20px;
+    left:77px;
+    color:black;
+}
+.right{
+    position: absolute;
+    top:20px;
+    right:77px;
+    color:red;
+}
+.loge a{
+    font-size: 18px;
+}
+input{
+    height: 40px;
+    width: 280px;
+    border:none;
+}
+.Inp-t{margin-bottom: 7px;}
+.Inp-b{margin-top: 7px;}
+.Inp-b,.Inp-t{
+    position: relative;
+    width:318px;
+    height:41px;
+    margin:8px auto;
+    border:1px solid #ccc;
+    font-size: 0;
+    line-height: 15px;
+    text-align: center;
+}
+.Inp-t img,.Inp-b img{
+    vertical-align: top;
+}
+.Inp-t input{
+    font-size: 12px;
+}
+.Inp-b input{
+    font-size: 12px;
+}
+.Inp-t i{
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    opacity: 0;
+}
+.Inp-b i{
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    opacity: 0;
+}
+.Fpwd{
+    margin-top: 20px;
+    text-align: right;
+}
+.Fpwd>a{
+    display: block;
+    margin-right: 15px;
+    color: #999;
+}
+.sub{
+    background: #e43a3d;
+    font-size: 20px;
+    color: white;
+    width: 306px;
+    height: 45px;
+}
+.dl{
+    margin: 20px 0 0 20px;
+}
+.loge{
+    height: 74px;
+}
+.qq{
+    margin-top: 38px;
+}
+.qq-itmes{
+    padding: 0 3px 0 50px;
+}
+.zhuce{
+    padding: 0 3px 0 88px;
+}
+/* 登录提示字体 */
+#password-error{
+    color: red;
+    margin-left: 6px;
+    /* color: #1d1b1b; */
+    margin-left: 6px;
+    width: 215px !important;
+    display: block;
+    height: 33px !important;
+    font-size: 12px;
+    line-height: 33px;
+    font-size: 12px;
+}
